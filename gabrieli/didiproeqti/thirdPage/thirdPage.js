@@ -41,7 +41,7 @@ $(document).ready(function () {
         // Check if the password matches before redirecting
         if (response === "Logout successful") {
           // Redirect to the registration page
-          window.location.href = "../docs/index.html";
+          window.location.href = "../../../docs/index.html";
         } else {
           console.error("Incorrect password");
         }

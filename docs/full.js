@@ -29,7 +29,7 @@ $(document).ready(function () {
 
           if (response.success) {
             // Login successful, redirect to secondPage.html
-            window.location.href = "../secondPage/secondPage.html";
+            window.location.href = "../gabrieli/didiproeqti/secondPage/secondPage.html";
           } else {
             // Login failed, handle accordingly
             console.log(response.message);
@@ -207,7 +207,7 @@ $(document).ready(function () {
             $("#lastname").val("");
             $("#registration-password").val("");
             $("#registration-email").val("");
-            window.location.href = "../secondPage/secondPage.html";
+            window.location.href = "../gabrieli/didiproeqti/secondPage/secondPage.html";
           }
         },
         error: function (xhr) {
