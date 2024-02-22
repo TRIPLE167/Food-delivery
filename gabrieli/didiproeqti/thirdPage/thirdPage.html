@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="third.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script defer src="../firstpage/full.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2399d5fa48.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>ThirdPage</title>
+  </head>
+  <body>
+    <header>
+      <div class="containerone">
+        <nav class="navbar">
+          <div class="logo">
+            <a href="../secondPage/secondPage.html"
+              ><img src="../imagedidi/shape.png" alt=""
+            /></a>
+            <div class="search">
+              <input type="search" id="mySearch" placeholder="search" />
+              <label for="mySearch"><div class="loopimg"></div></label>
+            </div>
+          </div>
+          <div class="square">
+            <ul>
+              <li>Restaurants</li>
+              <li class="lastone">Deals</li>
+              <div class="borderdiv"></div>
+              <li>My orders</li>
+              <div class="vector"></div>
+              <a href="../secondPage/secondPage.html">
+                <div class="girl">
+                  <img src="../imagedidi/img.png" alt="" />
+                </div>
+              </a>
+              <div class="verticalLine"></div>
+              <a href="../secondPage/secondPage.html"
+                ><div class="burger-icon"><i class="fa-solid fa-bars"></i></div
+              ></a>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="whole">
+        <section class="first">
+          <div class="params">
+            <h1>Settings</h1>
+            <div class="methods" tabindex="0">
+              <img src="../imagedidi/tipi.png" />
+              <div>
+                <p>Account</p>
+                <span>personal information</span>
+              </div>
+            </div>
+            <div class="methods" tabindex="0">
+              <img src="../imagedidi/icon.png" />
+              <div>
+                <p>address</p>
+                <span>shippings addresses</span>
+              </div>
+            </div>
+            <div class="methods" tabindex="0">
+              <img src="../imagedidi/credit.png" />
+              <div>
+                <p>payment method</p>
+                <span>connected credit cards</span>
+              </div>
+            </div>
+            <div class="methods" tabindex="0">
+              <img src="../imagedidi/secure.png" />
+              <div>
+                <p>security</p>
+                <span>password, 2FA</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="second">
+          <h1 class="acc">Account</h1>
+          <div class="container">
+            <div class="registration">
+              <div class="intro">
+                <h2>Personal info</h2>
+                <p>Avatar</p>
+                <div>
+                  <img src="../imagedidi/main avatar.png" alt="" />
+                  <button class="change">Change</button>
+                  <button>Remove</button>
+                </div>
+              </div>
+              <form>
+                <div class="up">
+                  <div>
+                    <label>First name</label>
+                    <input type="text" placeholder="Jane" />
+                  </div>
+                  <div>
+                    <label>Last name</label>
+                    <input type="text" placeholder="Robertson" />
+                  </div>
+                </div>
+                <div class="down">
+                  <div>
+                    <label>Email</label>
+                    <input
+                      type="email"
+                      placeholder="jane.robertson@example.com"
+                    />
+                  </div>
+                  <div>
+                    <label>Phone numbere </label>
+                    <input type="number" placeholder="(217) 555-0113" />
+                  </div>
+                </div>
+              </form>
+              <div class="notifications">
+                <h2>Email notifications</h2>
+                <div class="checkBox">
+                  <div class="left">
+                    <div>
+                      <input type="checkbox" />
+                      <label> New deals </label>
+                    </div>
+                    <div>
+                      <input type="checkbox" />
+                      <label> New restaurant </label>
+                    </div>
+                    <div>
+                      <input type="checkbox" />
+                      <label> Other statuses </label>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div>
+                      <input type="checkbox" />
+                      <label> password changes</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" />
+                      <label>special offers </label>
+                    </div>
+                    <div>
+                      <input type="checkbox" />
+                      <label>News letter </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="buttons">
+                <button type="button" id="logout">Log out</button>
+                <div>
+                  <button>Discard changes</button>
+                  <button>Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <div id="uxilavi" class="invisible"></div>
+    <div id="uxilavi1" class="invisible1">
+      <div class="logout-top">
+        <p>Log out</p>
+        <div id="x"><i class="fa-solid fa-x"></i></div>
+      </div>
+      <hr />
+      <div class="logout-mid">
+        <input
+          type="password"
+          name=""
+          id="logout-input"
+          placeholder="To confirm enter your passsword"
+        />
+        <i class="fa-solid fa-eye" id="eye"></i>
+      </div>
+      <p id="passwordIncorrect"></p>
+      <div class="logout-buttons">
+        <button id="logout-cancel">Cancel</button>
+        <button id="logout2">Log out</button>
+      </div>
+    </div>
+    <script src="../../myfir/JQ_File/js/jquery-3.7.1.min.js"></script>
+    <script src="thirdPage.js"></script>
+  </body>
+</html>

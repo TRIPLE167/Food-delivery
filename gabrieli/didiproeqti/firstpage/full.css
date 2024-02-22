@@ -1,0 +1,721 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+body .invisible {
+  display: none;
+}
+body .farda {
+  display: none;
+}
+body .forFarda {
+  display: block;
+  position: fixed;
+  width: 100vw;
+  height: 100%;
+  background-color: black;
+  opacity: 60%;
+  z-index: 4;
+}
+body .for_registration {
+  display: none;
+}
+body .blank {
+  width: 500px;
+  border-radius: 18px;
+  height: 538px;
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  padding: 20px;
+  display: block;
+}
+body .blank form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10.8px;
+}
+body .blank #x {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgb(233, 231, 231);
+  font-size: 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+}
+body .blank h1 {
+  font-size: 30px;
+}
+body .blank input::-webkit-outer-spin-button,
+body .blank input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+body .blank input,
+body .blank select {
+  height: 52px;
+  border-radius: 14px;
+  padding-left: 10px;
+}
+body .blank input:not(#checkbox) {
+  border: 1px solid var(--neutral-gray-light, #c7c8d2);
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+body .blank input:not(#checkbox):focus {
+  outline: 1px solid #0c4daf;
+  box-shadow: 1px 1px 5px 2px lightblue;
+}
+body .blank #emailtext {
+  color: red;
+}
+body .blank #countries {
+  width: 100%;
+  border: 1px solid var(--neutral-gray-light, #c7c8d2);
+  outline: none;
+  cursor: pointer;
+}
+body .blank #countries:hover, body .blank #countries:focus {
+  outline: 1px solid #0c4daf;
+  box-shadow: 1px 1px 5px 2px lightblue;
+}
+body .blank .saxeligvari {
+  display: flex;
+  justify-content: space-between;
+}
+body .blank .saxeligvari div {
+  position: relative;
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+  row-gap: 7px;
+  color: red;
+}
+body .blank .saxeligvari div .invisibleValidation {
+  display: none;
+}
+body .blank .saxeligvari div .invisibleValidation1 {
+  display: none;
+}
+body .blank .saxeligvari div .valid {
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  top: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .blank .saxeligvari div .valid i {
+  color: white;
+  font-size: 15px;
+}
+body .blank .saxeligvari div input {
+  width: 100%;
+}
+body .blank .nomeri {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+body .blank .nomeri div {
+  width: 100%;
+  font-size: 15px;
+  color: red;
+}
+body .blank .nomeri div .invisibleValidation2 {
+  display: none;
+}
+body .blank .nomeri div .valid {
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  top: 13px;
+}
+body .blank .nomeri div .valid i {
+  color: white;
+  font-size: 15px;
+}
+body .blank .nomeri div input {
+  width: 100%;
+}
+body .blank .nomeri div #eye2 {
+  color: #595b72;
+  position: absolute;
+  right: 13px;
+  font-size: 20px;
+  top: 16px;
+  cursor: pointer;
+}
+body .blank #ordernot {
+  font-size: 15px;
+  color: var(--neutral-gray-dark, #121657);
+}
+body .blank .emailvalidation {
+  position: relative;
+}
+body .blank .emailvalidation .invisibleValidation3 {
+  display: none;
+}
+body .blank .emailvalidation input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+body .blank .emailvalidation .valid {
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  top: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .blank .emailvalidation .valid i {
+  color: white;
+  font-size: 15px;
+}
+body .blank .confirm {
+  display: flex;
+  align-items: start;
+}
+body .blank .confirm #checkbox {
+  margin-top: 0px;
+  height: 30px;
+  width: 30px;
+  margin-right: 15px;
+}
+body .blank #checkbox-validation {
+  color: red;
+  font-size: 15px;
+}
+body .blank button {
+  width: 100%;
+  padding: 12px 16px;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  background: var(--primary-default, #4e60ff);
+  box-shadow: 0px 8px 20px 0px rgba(78, 96, 255, 0.16);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  cursor: pointer;
+  animation-name: animation;
+}
+body main .container {
+  display: flex;
+}
+body main .container .child_one {
+  width: 44.5%;
+  background: var(--neutral-white, #ffffff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main .container .child_one .center {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  width: 58%;
+}
+body main .container .child_one .center h1 {
+  color: var(--neutral-black, #2b2b43);
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82px;
+  letter-spacing: 0.1px;
+  margin: 128px 0 16px 0;
+}
+body main .container .child_one .center .first_p {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: var(--neutral-gray-dark, #545563);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+}
+body main .container .child_one .center form {
+  width: 100%;
+}
+body main .container .child_one .center form .first {
+  margin-top: 32px;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+}
+body main .container .child_one .center form .first label {
+  color: var(--neutral-gray-dark, #121657);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  padding-bottom: 5px;
+}
+body main .container .child_one .center form .first input {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--neutral-gray-light, #c7c8d2);
+  padding-left: 12px;
+  height: 44px;
+  margin-bottom: 10px;
+}
+body main .container .child_one .center form .first input:focus {
+  outline: 1px solid #0c4daf;
+  box-shadow: 1px 1px 5px 2px lightblue;
+}
+body main .container .child_one .center form .second {
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+body main .container .child_one .center form .second label {
+  color: var(--neutral-gray-dark, #121657);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  padding-bottom: 5px;
+}
+body main .container .child_one .center form .second input {
+  border-radius: 8px;
+  border: 1px solid var(--neutral-gray-light, #c7c8d2);
+  padding-left: 12px;
+  width: 100%;
+  height: 44px;
+}
+body main .container .child_one .center form .second input:focus {
+  outline: 1px solid #0c4daf;
+  box-shadow: 1px 1px 5px 2px lightblue;
+}
+body main .container .child_one .center form .second i {
+  position: absolute;
+  right: 0;
+  bottom: 16px;
+  cursor: pointer;
+  color: #595b72;
+}
+body main .container .child_one .center form #passValid {
+  color: red;
+  font-size: 15px;
+  min-width: 323px;
+  text-align: center;
+  margin-top: 14px;
+}
+body main .container .child_one .center form #passValid {
+  width: 100%;
+  display: block;
+}
+body main .container .child_one .center form .checkValid {
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+body main .container .child_one .center form .checkValid #check {
+  color: #0d0d13;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+}
+body main .container .child_one .center form .subClear button {
+  width: 100%;
+  padding: 12px 16px;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  background: var(--primary-default, #4e60ff);
+  box-shadow: 0px 8px 20px 0px rgba(78, 96, 255, 0.16);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  cursor: pointer;
+  animation-name: animation;
+}
+body main .container .child_one .center form .subClear #signup {
+  width: 100%;
+  padding: 12px 16px;
+  text-align: center;
+  border-radius: 8px;
+  background: var(--primary-default, #f0f0f0);
+  color: #4e60ff;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  cursor: pointer;
+  animation-name: animation;
+  border: 2px solid #4e60ff;
+}
+body main .container .child_one .center form .forCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main .container .child_one .center form .forCenter .forgot {
+  margin-bottom: 94px;
+  margin-top: 16px;
+  color: #4e60ff;
+}
+body main .container .child_one .center form .forCenter .second_p {
+  margin-top: 94px;
+  color: #545563;
+}
+body main .container .child_one .center form .forCenter .sign_up {
+  color: #4e60ff;
+  cursor: pointer;
+}
+body main .container .child_one .center form .forCenter .sign_up:hover {
+  text-decoration: underline;
+}
+body main .child_two {
+  width: 55.5%;
+  min-height: 100vh;
+  background: var(--primary-hover, #697bff);
+}
+body main .child_two .samive {
+  display: flex;
+}
+body main .child_two .samive .up {
+  width: 39.1%;
+  height: 436.411px;
+  border-radius: 14.309px;
+  border: 0.894px solid var(--neutral-gray-lightest, #edeef2);
+  background: var(--neutral-white, #fff);
+  margin: 48px 27px 0 11.8%;
+}
+body main .child_two .samive .up .up-top {
+  padding: 14px 14px 0 14px;
+  display: flex;
+  justify-content: space-between;
+}
+body main .child_two .samive .up .up-top h2 {
+  color: #2b2b43;
+  margin-bottom: 2px;
+}
+body main .child_two .samive .up .up-top p {
+  color: #4e60ff;
+  font-size: 17px;
+}
+body main .child_two .samive .up .up-top p i {
+  font-size: 12px;
+}
+body main .child_two .samive .up .up-top p span {
+  font-size: 10px;
+  color: #c7c8d2;
+}
+body main .child_two .samive .up .up-top button {
+  color: #4e60ff;
+  font-weight: bold;
+  border: 1px solid #4e60ff;
+  background-color: transparent;
+  border-radius: 7px;
+  width: 107px;
+  height: 39px;
+}
+body main .child_two .samive .up .newest {
+  margin-inline: auto;
+  width: 148px;
+  height: 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #c7c8d2;
+  margin-top: 25px;
+  border-radius: 7px;
+}
+body main .child_two .samive .up .newest p {
+  color: #83859c;
+  font-size: 11px;
+}
+body main .child_two .samive .up .newest p span {
+  color: #2b2b43;
+  font-size: 12px;
+}
+body main .child_two .samive .up .savanah {
+  padding-inline: 14px;
+  display: flex;
+  margin-top: 40px;
+}
+body main .child_two .samive .up .savanah img {
+  width: 32px;
+  height: 32px;
+}
+body main .child_two .samive .up .savanah div {
+  margin-left: 10px;
+}
+body main .child_two .samive .up .savanah div h1 {
+  font-size: 12px;
+  color: #2b2b43;
+  margin-bottom: 2px;
+}
+body main .child_two .samive .up .savanah div p {
+  color: #4e60ff;
+  font-size: 8px;
+}
+body main .child_two .samive .up .savanah div p span {
+  color: #83859c;
+  margin-left: 7px;
+  margin-top: 2px;
+}
+body main .child_two .samive .up .savanah div h2 {
+  color: #2b2b43;
+  font-size: 12px;
+  margin-top: 12px;
+}
+body main .child_two .samive .up .savanah div h3 {
+  margin-top: 20px;
+  font-size: 10px;
+}
+body main .child_two .samive .up .savanah div h3 span:first-child {
+  margin-right: 17px;
+  color: #25282b;
+}
+body main .child_two .samive .up .savanah div h3 span:last-child {
+  color: #83859c;
+}
+body main .child_two .samive .up .jacob {
+  padding-inline: 14px;
+  display: flex;
+  margin-top: 49px;
+}
+body main .child_two .samive .up .jacob img {
+  width: 32px;
+  height: 32px;
+}
+body main .child_two .samive .up .jacob div {
+  margin-left: 10px;
+}
+body main .child_two .samive .up .jacob div h1 {
+  font-size: 12px;
+  color: #2b2b43;
+  margin-bottom: 2px;
+}
+body main .child_two .samive .up .jacob div p {
+  color: #4e60ff;
+  font-size: 8px;
+}
+body main .child_two .samive .up .jacob div p span {
+  color: #83859c;
+  margin-left: 7px;
+}
+body main .child_two .samive .up .jacob div h2 {
+  color: #2b2b43;
+  font-size: 12px;
+  margin-top: 20px;
+}
+body main .child_two .samive .up .jacob div h3 {
+  margin-top: 20px;
+  font-size: 10px;
+}
+body main .child_two .samive .up .jacob div h3 span:first-child {
+  margin-right: 17px;
+  color: #25282b;
+}
+body main .child_two .samive .up .jacob div h3 span:last-child {
+  color: #83859c;
+}
+body main .child_two .samive .right {
+  width: 36.8%;
+  height: 279px;
+  border-radius: 14.309px;
+  background: var(--neutral-white, #fff);
+  margin: 80px 9% 0 0px;
+  padding: 13px;
+}
+body main .child_two .samive .right img {
+  width: 100%;
+  height: 151px;
+  border-radius: 12px;
+}
+body main .child_two .samive .right h1 {
+  font-size: 15px;
+  color: #2b2b43;
+  margin-top: 10px;
+}
+body main .child_two .samive .right p {
+  font-size: 10px;
+  color: #83859c;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+body main .child_two .samive .right div {
+  display: flex;
+  justify-content: space-between;
+}
+body main .child_two .samive .right div h2 {
+  font-size: 20px;
+  color: #2b2b43;
+}
+body main .child_two .samive .right div div {
+  width: 26px;
+  height: 26px;
+  background-color: #f3f4ff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .child_two .samive .right div div p {
+  color: #4e60ff;
+  font-size: 20px;
+}
+body main .child_two .down {
+  width: 77.2%;
+  height: 132px;
+  border-radius: 14.309px;
+  background: var(--neutral-white, #fff);
+  margin: -30px 0 0 65px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 0px 80px 0px rgba(49, 57, 120, 0.4);
+  display: flex;
+  align-items: center;
+}
+body main .child_two .down img {
+  width: 152px;
+  height: 104px;
+  margin-inline: 15px;
+  border-radius: 12px;
+}
+body main .child_two .down .down-mid h1 {
+  color: #2b2b43;
+  font-size: 15px;
+}
+body main .child_two .down .down-mid p {
+  color: #83859c;
+  font-size: 11px;
+  margin-top: 10px;
+  margin-bottom: 19px;
+  max-width: 270px;
+}
+body main .child_two .down .down-mid h2 {
+  color: #2b2b43;
+  font-size: 20px;
+}
+body main .child_two .down .down-end div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  column-gap: 5px;
+}
+body main .child_two .down .down-end div div {
+  width: 16px;
+  height: 16px;
+  background-color: #edeef2;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .child_two .down .down-end button {
+  width: 112px;
+  height: 37px;
+  color: #4e60ff;
+  background-color: #f3f4ff;
+  font-size: 11px;
+  border-radius: 7px;
+  border: none;
+}
+body main .child_two .lastdiv {
+  width: 55.5%;
+  margin: 68px auto 132px;
+}
+body main .child_two .lastdiv .lastdivchild {
+  width: 100%;
+  text-align: center;
+}
+body main .child_two .lastdiv .lastdivchild h2 {
+  color: var(--neutral-white, #fff);
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0.1px;
+  margin-bottom: 40px;
+}
+body main .child_two .lastdiv .lastdivchild .forreviews {
+  color: var(--neutral-white, #fff);
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+}

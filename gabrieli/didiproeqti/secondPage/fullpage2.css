@@ -1,0 +1,462 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.containerone .navbar .logo, .containerone .navbar .square, .containerone .navbar .square ul {
+  display: flex;
+  align-items: center;
+}
+
+body a {
+  text-decoration: none;
+}
+@media (width <= 768px) {
+  body .logo input,
+  body .logo label,
+  body .logo div {
+    display: none;
+  }
+  body ul li {
+    display: none;
+  }
+}
+
+.containerone {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #edeef2;
+}
+.containerone .navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 82.2%;
+  height: 80px;
+  background: var(--neutral-white, #fff);
+}
+@media (width <= 768px) {
+  .containerone .navbar {
+    width: 330px;
+  }
+}
+.containerone .navbar .logo {
+  gap: 40px;
+}
+.containerone .navbar .logo .search {
+  width: 234px;
+  height: 40px;
+  border-radius: 12px;
+  background: var(--neutral-gray-lightest, #edeef2);
+  display: flex;
+}
+@media (width <= 768px) {
+  .containerone .navbar .logo .search {
+    display: none;
+  }
+}
+.containerone .navbar .logo .search input {
+  height: 40px;
+  width: 190px;
+  border-radius: 12px;
+  border: none;
+  background: var(--neutral-gray-lightest, #edeef2);
+  padding-left: 12px;
+}
+.containerone .navbar .logo .search input:focus {
+  outline: none;
+}
+.containerone .navbar .logo .search .loopimg {
+  width: 44px;
+  height: 40px;
+  background-image: url(../imagedidi/search.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+.containerone .navbar .square ul li {
+  color: var(--neutral-black, #2b2b43);
+  text-align: right;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  cursor: pointer;
+}
+.containerone .navbar .square ul .borderdiv {
+  width: 1px;
+  height: 32px;
+  background-color: var(--neutral-black, #edeef2);
+  margin-right: 20px;
+}
+@media (width <= 768px) {
+  .containerone .navbar .square ul .borderdiv {
+    display: none;
+  }
+}
+.containerone .navbar .square ul .lastone {
+  margin: 0 20px 0 28px;
+}
+.containerone .navbar .square .vector {
+  width: 48px;
+  height: 48px;
+  background-image: url(../imagedidi/shopping\ bag.png);
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  background-color: var(--primary-light, #f3f4ff);
+  background-position: center;
+  margin: 0 24px 0 17px;
+}
+.containerone .navbar .square .girl {
+  width: 48px;
+  height: 48px;
+  background-image: url(../imagedidi/img.png);
+  border-radius: 16px;
+}
+.containerone .navbar .square .burger-icon {
+  display: none;
+}
+@media (width <= 768px) {
+  .containerone .navbar .square .burger-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+    background: var(--neutral-gray-lightest, #edeef2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #83859c;
+  }
+}
+@media (width <= 768px) {
+  .containerone .navbar .square .verticalLine {
+    height: 32px;
+    border: 1px solid #edeef2;
+    margin-inline: 17px;
+  }
+}
+
+section .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section .container .sale {
+  width: 82.2%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+@media (width <= 768px) {
+  section .container .sale {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+}
+section .container .sale .ice {
+  width: 48%;
+  height: 188px;
+  border-radius: 16px;
+  background-color: var(--primary-light, #f3f4ff);
+  display: flex;
+}
+@media (width <= 768px) {
+  section .container .sale .ice {
+    width: 330px;
+    height: 296px;
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+}
+section .container .sale .ice .left {
+  width: 290px;
+  height: 188px;
+  background-image: url(../imagedidi/imgg.png);
+  background-position: center;
+}
+@media (width <= 768px) {
+  section .container .sale .ice .left {
+    width: 330px;
+  }
+}
+section .container .sale .ice .describe {
+  padding: 24px 24px 16px 16px;
+}
+@media (width <= 768px) {
+  section .container .sale .ice .describe {
+    display: flex;
+    gap: 80px;
+  }
+}
+section .container .sale .ice .describe h3 {
+  color: var(--neutral-black, #2b2b43);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0.1px;
+}
+section .container .sale .ice .describe h1 {
+  color: var(--primary-default, #4e60ff);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 56px;
+  letter-spacing: 0.1px;
+}
+section .container .sale .ice .describe p {
+  color: var(--neutral-gray, #83859c);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  padding-top: 32px;
+}
+section .container .sale .burger {
+  width: 48%;
+  height: 188px;
+  border-radius: 16px;
+  border-radius: 16px;
+  background: var(--secondary-light, #fff3ed);
+  display: flex;
+}
+@media (width <= 768px) {
+  section .container .sale .burger {
+    width: 330px;
+    height: 296px;
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+}
+section .container .sale .burger .leftone {
+  width: 290px;
+  height: 188px;
+  background-image: url(../imagedidi/img2.png);
+  background-position: center;
+}
+@media (width <= 768px) {
+  section .container .sale .burger .leftone {
+    width: 330px;
+  }
+}
+section .container .sale .burger .describeone {
+  padding: 24px 24px 16px 16px;
+}
+@media (width <= 768px) {
+  section .container .sale .burger .describeone {
+    display: flex;
+    gap: 60px;
+  }
+}
+section .container .sale .burger .describeone h3 {
+  color: var(--neutral-black, #2b2b43);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0.1px;
+}
+section .container .sale .burger .describeone h1 {
+  color: var(--secondary-default, #fd6d22);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 56px;
+  letter-spacing: 0.1px;
+}
+section .container .sale .burger .describeone p {
+  color: var(--neutral-gray, #83859c);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  padding-top: 32px;
+}
+section .container .menu {
+  width: 82.2%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (width <= 768px) {
+  section .container .menu {
+    width: 330px;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+  }
+}
+section .container .menu div {
+  width: 160px;
+  height: 80px;
+  border: 1px solid #edeef2;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+section .container .menu div:hover, section .container .menu div:focus {
+  background-color: #f8f9ff;
+  border: 1px solid #697bff;
+  cursor: pointer;
+}
+@media (width <= 768px) {
+  section .container .menu div {
+    width: 100px;
+    height: 80px;
+  }
+}
+section .container .menu div p {
+  color: var(--neutral-gray-dark, #545563);
+  text-align: center;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+}
+section .container .restaurants {
+  width: 82.2%;
+}
+@media (width <= 768px) {
+  section .container .restaurants {
+    width: 330px;
+  }
+}
+section .container .restaurants .ordered {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (width <= 768px) {
+  section .container .restaurants .ordered {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+}
+section .container .restaurants .ordered .sushi,
+section .container .restaurants .ordered .pizza,
+section .container .restaurants .ordered .ninjashushi {
+  width: 28%;
+  height: 276px;
+  border-radius: 16px;
+  background-image: url(../imagedidi/img3.png);
+  background-repeat: no-repeat;
+  border: 1px solid #edeef2;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 16px;
+  gap: 23px 0;
+}
+@media (width <= 768px) {
+  section .container .restaurants .ordered .sushi,
+  section .container .restaurants .ordered .pizza,
+  section .container .restaurants .ordered .ninjashushi {
+    width: 305px;
+  }
+}
+section .container .restaurants .ordered .sushi h1,
+section .container .restaurants .ordered .pizza h1,
+section .container .restaurants .ordered .ninjashushi h1 {
+  color: var(--neutral-black, #2b2b43);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  display: inline;
+}
+section .container .restaurants .ordered .sushi p,
+section .container .restaurants .ordered .pizza p,
+section .container .restaurants .ordered .ninjashushi p {
+  color: var(--neutral-gray, #83859c);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  display: inline;
+}
+section .container .restaurants .ordered .sushi img,
+section .container .restaurants .ordered .pizza img,
+section .container .restaurants .ordered .ninjashushi img {
+  width: 12px;
+  height: 12px;
+  display: inline;
+}
+section .container .restaurants h4 {
+  color: var(--neutral-black, #2b2b43);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0.1px;
+  margin: 40px 0 16px 0;
+}
+section .container .restaurants .hotdog {
+  display: flex;
+  width: 70px;
+  padding: 4px 10px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 100px;
+  background: var(--neutral-gray-lightest, #edeef2);
+}
